@@ -1,15 +1,19 @@
 package Challnage_three;
-
-import java.util.List;
-
 public class main {
     public static void main(String[] args) {
-        Etudiant etudiant =new Etudiant(1,"Amin");
+       
+        Etudiant etudiant2 =new Etudiant("ayoub");
+        Etudiant etudiant3 =new Etudiant("Sami");
         Cours coure = new Cours(1,"INFORMATIQUE");
-        Cours.ajouterEtudiant(etudiant);
-        Etudiant.inscrire(coure);
+        Cours coure1 = new Cours(2,"java");
+        etudiant2.inscrire(coure);
+        etudiant2.inscrire(coure1);
+        etudiant3.inscrire(coure1);
+        etudiant3.inscrire(coure);
+        
         coure.affecherEtudiant();
 
+       
 
     }
 }
